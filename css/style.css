@@ -1,30 +1,4 @@
-html[data-theme='light'] {
-    --bg-color: #e4f0fa;
-    --primary: #ff7c7c;
-    --dk-text: #2b3c5b;
-    --dk-subtext: #7a8aa3;
-    --card: #e6eef8;
-    --component-s: #c4cdd1;
-    --component: #d3dee3;
-    --grad-base: rgb(250, 177, 135);
-    --gradient-1: rgb(250, 177, 135);
-    --gradient-2: rgb(246, 117, 117);
-    --cal-indicator: invert(72%) sepia(40%) saturate(5103%) hue-rotate(314deg) brightness(110%) contrast(105%);
-}
 
-html[data-theme='dark'] {
-    --bg-color: #121215;
-    --primary: #8d8fd2;
-    --dk-text: #dfe0fb;
-    --dk-subtext: #84849d;
-    --card: #18181c;
-    --component-s: #454254;
-    --component: #2f2d36;
-    --grad-base: rgb(125, 90, 242);
-    --gradient-1: rgb(145, 114, 247);
-    --gradient-2: rgb(104, 61, 247);
-    --cal-indicator: invert(57%) sepia(96%) saturate(184%) hue-rotate(200deg) brightness(85%) contrast(93%);
-}
 
 html {
     scroll-behavior: smooth;
@@ -50,15 +24,10 @@ body {
 
 /*Navbar*/
 .header {
-
     height: 90vh;
     background-image: url("../Images/about.png");
     background-size: cover;
     background-repeat: no-repeat;
-
-
-
-
 }
 
 .mblheader {
@@ -291,255 +260,6 @@ footer {
 
 /*Responsive*/
 
-@media screen and (min-width: 1024px) and (max-width: 1820px) {
-
-
-    a {
-        font-size: 16px;
-    }
-
-
-    .left {
-        font-size: 25px;
-
-    }
-
-    .upImg {
-        width: 40%;
-        top: 13%;
-        left: 60%;
-
-
-    }
-
-    .upImg p {
-        font-size: 3rem;
-    }
-
-    .stream {
-        width: 150px;
-        height: 53px;
-        margin-left: 10px;
-        border-radius: 17px;
-        font-size: 1.3rem;
-    }
-
-    .about {
-        gap: 50px;
-        margin-bottom: 50px;
-    }
-
-    .leftAbt {
-        width: 35%;
-    }
-
-    .rightAbt {
-        width: 55%;
-
-    }
-
-    .rightAbt p {
-        font-size: 16px;
-
-    }
-
-    .roster {
-        margin: 50px 20px;
-        gap: 50px;
-
-
-    }
-
-    .card {
-
-        padding: 30px;
-        height: 60vh;
-        width: 30vw;
-    }
-
-
-    .roster .card p {
-        font-size: 18px;
-
-    }
-
-    .roster .card span {
-        font-size: 20px;
-
-    }
-
-    .links i {
-        font-size: 35px;
-    }
-
-    .inst {
-        margin-right: 10px;
-    }
-
-
-    footer {
-        height: 10vh;
-        font-size: 14px;
-
-    }
-
-    footer span {
-        font-size: 16px;
-    }
-
-}
-
-@media screen and (min-width: 530px) and (max-width: 1023px) {
-
-
-
-    .upImg {
-        width: 100%;
-        position: absolute;
-        top: 50%;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .stream {
-        width: 170px;
-        height: 60px;
-        margin-left: 0px;
-        border-radius: 20px;
-        font-size: 1.3rem;
-    }
-
-    .btn {
-        display: flex;
-        justify-content: center;
-    }
-
-    .upImg p {
-        font-size: 50px;
-    }
-
-
-
-    ul {
-
-        gap: 2rem;
-    }
-
-
-
-    a {
-
-        font-size: 13px;
-
-    }
-
-
-    .left {
-        font-size: 25px;
-
-    }
-
-
-    /* About Section*/
-
-    .about {
-
-
-        flex-direction: column;
-
-        gap: 30px;
-        margin-bottom: 50px;
-
-
-    }
-
-    .leftAbt {
-        margin-top: 50px;
-        width: 70%;
-    }
-
-    .leftAbt img {
-
-        border-radius: 200px;
-
-
-    }
-
-    .rightAbt {
-        width: 90%;
-
-    }
-
-    .rightAbt p {
-        font-size: 23px;
-
-    }
-
-    hr {
-
-        height: .05rem;
-        margin: 0 2rem;
-
-    }
-
-    /*Rosters*/
-    .roster {
-        margin: 50px 0px;
-
-        gap: 25px;
-
-
-    }
-
-    .card {
-
-        padding: 30px;
-        height: 40vh;
-        width: 40vw;
-        gap: 15px;
-
-    }
-
-    .card .links {
-
-        gap: 0px;
-
-    }
-
-    .roster .card p {
-        font-size: 16px;
-
-    }
-
-    .roster .card span {
-        font-size: 18px;
-
-    }
-
-    .links i {
-        font-size: 30px;
-    }
-
-    .inst {
-
-        margin-right: 20px;
-    }
-
-
-
-    #pImg {
-
-        width: 90%;
-
-    }
-
-
-}
 
 
 /* mobile header */
@@ -548,13 +268,9 @@ footer {
     html {
 
         scroll-padding-top: 1rem;
-    
-    }
-    .header {
-        height: 80vh;
-        background-position: 9% 0%;
 
     }
+
 
     nav {
         display: none;
@@ -583,6 +299,7 @@ footer {
         display: grid;
         width: 100%;
         position: fixed;
+        overflow: hidden;
         top: 93%;
         bottom: 0;
         left: 0;
@@ -661,8 +378,291 @@ footer {
 
 }
 
-@media screen and (min-width: 280px) and (max-width: 530px) {
 
+
+
+@media screen and (min-width: 914px) and (max-width: 1400px) {
+    .header {
+        height: 70vh;
+    }
+    
+.upImg {
+    width: 40%;
+    position: relative;
+    top: 10%;
+    left: 54%;
+
+}
+
+.upImg p {
+
+    font-size: 3.3rem;
+    font-weight: bold;
+}
+
+    
+    .stream {
+        width: 170px;
+        height: 60px;
+        margin-left: 0px;
+        border-radius: 20px;
+        font-size: 1.6rem;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+    }
+
+  
+
+
+    .left {
+        font-size: 20px;
+    }
+
+
+    /* About Section*/
+
+    .about {
+        gap: 30px;
+
+    }
+
+    .leftAbt {
+        width: 30%;
+
+    }
+
+
+    .rightAbt {
+        width: 60%;
+
+    }
+
+    .rightAbt p {
+        font-size: 23px;
+        text-align: justify;
+
+
+    }
+
+    .links {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    hr {
+
+        height: .05rem;
+        margin: 0 2rem;
+
+    }
+
+    /*Rosters*/
+    .roster {
+        margin: 50px 0px;
+        gap: 25px;
+    }
+
+    .card {
+        padding: 30px;
+        height: auto;
+        width: 30vw;
+        gap: 15px;
+    }
+
+    .card .links {
+        gap: 0px;
+    }
+
+    .roster .card p {
+        font-size: 16px;
+
+    }
+
+    .roster .card span {
+        font-size: 18px;
+
+    }
+
+    .links i {
+        font-size: 40px;
+    }
+
+    .inst {
+        margin-right: 10px;
+    }
+
+
+
+    #pImg {
+
+        width: 90%;
+
+    }
+    .roster .card p {
+        font-size: 23px;
+        text-align: justify;
+        color: #84849d;
+    }
+    
+    .roster .card span {
+        font-size: 25px;
+        text-align: justify;
+    }
+    footer {
+        font-size: 17px;
+    }
+
+    footer span {
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 551px) and (max-width: 913px) {
+    .header {
+        height: 80vh;
+        background-position: 5% 0%;
+
+    }
+
+    .upImg {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .stream {
+        width: 200px;
+        height: 60px;
+        margin-left: 0px;
+        border-radius: 20px;
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .upImg p {
+        font-size: 63px;
+
+    }
+
+
+    .left {
+        font-size: 20px;
+    }
+
+
+    /* About Section*/
+
+    .about {
+        gap: 15px;
+    }
+
+    .leftAbt {
+
+        width: 35%;
+
+    }
+
+
+    .rightAbt {
+        width: 55%;
+
+    }
+
+    .rightAbt p {
+        font-size: 16px;
+        text-align: justify;
+
+
+    }
+
+    .links {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    hr {
+
+        height: .05rem;
+        margin: 0 2rem;
+
+    }
+
+    /*Rosters*/
+    .roster {
+        margin: 50px 0px;
+        gap: 25px;
+    }
+
+    .card {
+        padding: 30px;
+        height: auto;
+        width: 40vw;
+        gap: 15px;
+    }
+
+    .card .links {
+        gap: 0px;
+    }
+
+    .roster .card p {
+        font-size: 16px;
+
+    }
+
+    .roster .card span {
+        font-size: 18px;
+
+    }
+
+    .links i {
+        font-size: 25px;
+    }
+
+    .inst {
+        margin-right: 10px;
+    }
+
+
+
+    #pImg {
+
+        width: 90%;
+
+    }
+
+    footer {
+        font-size: 13px;
+    }
+
+    footer span {
+        font-size: 13px;
+    }
+
+
+}
+
+@media screen and (min-width: 330px) and (max-width: 550px) {
+    .header {
+        height: 70vh;
+        background-position: 9% 0%;
+
+    }
 
     .upImg {
         width: 100%;
@@ -784,10 +784,12 @@ footer {
         width: 90%;
 
     }
-    footer{
+
+    footer {
         font-size: 13px;
     }
-    footer span{
+
+    footer span {
         font-size: 13px;
     }
 
