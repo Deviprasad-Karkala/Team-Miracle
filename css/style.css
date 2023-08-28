@@ -1,3 +1,5 @@
+@import'base/_mixins';
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
@@ -19,241 +21,301 @@ body {
     background-color: #121215;
     color: #dfe0fb;
 }
-    /*Navbar*/
-    .header {
-        height: 80vh;
-        background-image: url("../Images/about.png");
-        background-size: cover;
-        background-repeat: no-repeat;
+
+/*Navbar*/
+.header {
+    height: 80vh;
+    background-image: url("../Images/about.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mblheader {
+    display: none;
+}
+
+.upImg {
+    width: 50%;
+    position: relative;
+    top: 10%;
+    left: 54%;
+
+}
+
+.upImg p {
+
+    font-size: 4.8rem;
+    font-weight: bold;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 11vh;
+    background-color: rgba(18, 18, 21, 0.3);
+
+}
+
+ul {
+    display: flex;
+    gap: 5rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #dfe0fb;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: 0.2s ease-out;
+
+}
+
+a:hover {
+    color: rgb(104, 61, 247);
+    text-shadow: 0 0 20px rgb(76, 22, 255);
+}
+
+.left {
+    font-size: 35px;
+    font-weight: 600;
+    text-shadow: 2px 2px 20px #000000;
+
+}
+
+span {
+    color: rgb(95, 69, 240);
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: 0.2s ease-out;
+
+}
+
+span:hover {
+    text-shadow: 0 0 20px rgb(76, 22, 255);
+}
+
+
+/* First Section */
+
+
+
+.btn .stream {
+    width: 210px;
+    height: 70px;
+    margin-left: 15px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+
+    color: #dfe0fb;
+    background: linear-gradient(160deg, rgb(145, 114, 247)0%, rgb(104, 61, 247) 100%);
+    box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 15px 0px;
+}
+
+.btn a {
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    font-weight: 600;
+
+}
+
+.btn a:hover {
+    color: #dfe0fb;
+
+}
+
+
+
+/* About Section*/
+
+.about {
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 100px;
+
+
+}
+
+.leftAbt {
+    width: 25%;
+}
+
+.leftAbt img {
+    width: 100%;
+    height: auto;
+    border-radius: 44px;
+
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+}
+
+.rightAbt {
+    width: 60%;
+
+}
+
+.rightAbt p {
+    font-size: 25px;
+    font-weight: 400;
+    color: #84849d;
+    text-align: justify;
+    margin-bottom: 20px;
+
+}
+
+
+/*Rosters*/
+.tmRoster {
+    padding: 25px 0;
+    width: 100%;
+    background-color: #18181c;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-top: 1px solid rgb(95, 69, 240);
+    border-bottom: 1px solid rgb(95, 69, 240);
+}
+
+.tmRoster::-webkit-scrollbar {
+    display: none;
+}
+
+.tmRoster h1 {
+    font-size: 60px;
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 20px;
+    animation-timing-function: linear;
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+
+}
+
+.tmRoster h1 .span1 {
+    background-color: rgb(95, 69, 240);
+    color: #18181c;
+    padding: 0px 20px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
     }
 
-    .mblheader {
-        display: none;
+    100% {
+        transform: translateX(calc(-100% - 24px));
     }
+}
 
-    .upImg {
-        width: 50%;
-        position: relative;
-        top: 10%;
-        left: 54%;
-
-    }
-
-    .upImg p {
-
-        font-size: 4.8rem;
-        font-weight: bold;
-    }
+.tmRoster:hover h1 {
+    animation-play-state: paused;
+}
 
 
-    nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 11vh;
-        background-color: rgba(18, 18, 21, 0.3);
-
-    }
-
-    ul {
-        display: flex;
-        gap: 5rem;
-    }
-
-    li {
-        list-style: none;
-    }
-
-    a {
-        text-decoration: none;
-        color: #dfe0fb;
-        font-size: 20px;
-        text-transform: uppercase;
-        font-weight: 400;
-        transition: 0.2s ease-out;
-
-    }
-
-    a:hover {
-        color: rgb(104, 61, 247);
-        text-shadow: 0 0 20px rgb(76, 22, 255);
-    }
-
-    .left {
-        font-size: 35px;
-        font-weight: 600;
-        text-shadow: 2px 2px 20px #000000;
-
-    }
-
-    span {
-        color: rgb(95, 69, 240);
-        font-weight: 600;
-        text-transform: capitalize;
-        transition: 0.2s ease-out;
-
-    }
-
-    span:hover {
-        text-shadow: 0 0 20px rgb(76, 22, 255);
-    }
-
-
-    /* First Section */
+.roster {
+    margin: 100px 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
 
 
 
-    .stream {
-        width: 210px;
-        height: 70px;
-        margin-left: 15px;
-        border-radius: 25px;
-        border: none;
-        cursor: pointer;
-        font-size: 1.8rem;
-        font-weight: 600;
-        color: #dfe0fb;
-        background: linear-gradient(160deg, rgb(145, 114, 247)0%, rgb(104, 61, 247) 100%);
-        box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 15px 0px;
-    }
-
-    /* About Section*/
-
-    .about {
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 100px;
-        margin-bottom: 100px;
+.card {
+    background-color: #18181c;
+    border-radius: 24px;
+    padding: 30px;
+    height: auto;
+    width: 23vw;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    animation: anime 3s cubic-bezier(0.16, 1, 0.3, 1) 1s;
+}
 
 
-    }
+.card .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 
-    .leftAbt {
-        width: 25%;
-    }
+}
 
-    .leftAbt img {
-        width: 100%;
-        height: auto;
-        border-radius: 44px;
+.roster .card p {
+    font-size: 23px;
+    text-align: justify;
+    color: #84849d;
+}
 
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
-    }
+.roster .card span {
+    font-size: 25px;
+    text-align: justify;
+}
 
-    .rightAbt {
-        width: 60%;
+.links i {
+    font-size: 45px;
+}
 
-    }
+.inst {
+    transition: 0.3s ease-out;
+    margin-right: 30px;
+}
 
-    .rightAbt p {
-        font-size: 25px;
-        font-weight: 400;
-        color: #84849d;
-        text-align: justify;
-        margin-bottom: 20px;
+.yt {
+    transition: 0.3s ease-out;
+}
 
-    }
+.inst:hover {
+    color: #f02e68;
+    text-shadow: 0 0 15px #ff1b72;
+}
 
-    hr {
-        border: 0;
-        background: rgb(125, 90, 242);
-        height: .05rem;
-        margin: 0 5rem;
-
-    }
-
-    /*Rosters*/
-    .roster {
-        margin: 100px 70px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 80px;
-        flex-wrap: wrap;
-
-    }
-
-    .card {
-        background-color: #18181c;
-        border-radius: 24px;
-        padding: 30px;
-        height: auto;
-        width: 23vw;
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 13px;
-
-    }
-
-    .card .links {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-
-    }
-
-    .roster .card p {
-        font-size: 23px;
-        text-align: justify;
-        color: #84849d;
-    }
-
-    .roster .card span {
-        font-size: 25px;
-        text-align: justify;
-    }
-
-    .links i {
-        font-size: 45px;
-    }
-
-    .inst {
-        transition: 0.3s ease-out;
-        margin-right: 30px;
-    }
-
-    .yt {
-        transition: 0.3s ease-out;
-    }
-
-    .inst:hover {
-        color: #f02e68;
-        text-shadow: 0 0 15px #ff1b72;
-    }
-
-    .yt:hover {
-        color: rgb(255, 60, 60);
-        text-shadow: 0 0 15px rgb(255, 38, 38);
-    }
+.yt:hover {
+    color: rgb(255, 60, 60);
+    text-shadow: 0 0 15px rgb(255, 38, 38);
+}
 
 
-    #pImg {
+#pImg {
 
-        width: 70%;
-        border-radius: 24px;
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+    width: 70%;
+    border-radius: 24px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
 
-    }
+}
 
-    /*footer*/
+/*footer*/
 
-    footer {
-        background-color: #18181c;
-        height: 6vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 18px;
-        color: #84849d;
+footer {
+    background-color: #18181c;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #84849d;
 
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
-    }
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+}
+
 /*Responsive*/
 
 
@@ -393,7 +455,7 @@ body {
         position: relative;
         top: 10%;
         left: 60%;
-    
+
     }
 
     .upImg p {
@@ -403,8 +465,8 @@ body {
     }
 
 
-   
-    
+
+
     /* About Section*/
 
 
@@ -425,7 +487,7 @@ body {
 
     }
 
-   
+
 
 }
 
@@ -452,11 +514,16 @@ body {
     }
 
 
-    .stream {
+    .btn.stream {
         width: 170px;
         height: 60px;
         margin-left: 0px;
         border-radius: 20px;
+
+    }
+
+
+    .btn a {
         font-size: 1.6rem;
     }
 
@@ -593,11 +660,16 @@ body {
         gap: 20px;
     }
 
-    .stream {
+    .btn.stream {
         width: 200px;
         height: 60px;
         margin-left: 0px;
         border-radius: 20px;
+
+    }
+
+
+    .btn a {
         font-size: 1.8rem;
     }
 
@@ -621,6 +693,7 @@ body {
 
     .about {
         gap: 15px;
+        margin-top: 20px;
     }
 
     .leftAbt {
@@ -656,6 +729,18 @@ body {
     }
 
     /*Rosters*/
+
+    .tmRoster {
+        padding: 25px 0;
+    }
+
+    .tmRoster h1 {
+        font-size: 45px;
+
+    }
+
+
+
     .roster {
         margin: 50px 0px;
         gap: 25px;
@@ -711,8 +796,8 @@ body {
 
 @media screen and (min-width: 330px) and (max-width: 550px) {
     .header {
-        height: 70vh;
-        background-position: 9% 0%;
+        height: 75vh;
+        background-position: 5% 0%;
 
     }
 
@@ -729,11 +814,15 @@ body {
         gap: 20px;
     }
 
-    .stream {
+    .btn .stream {
         width: 150px;
-        height: 57px;
+        height: 50px;
         margin-left: 0px;
         border-radius: 20px;
+
+    }
+
+    .btn a {
         font-size: 1.3rem;
     }
 
@@ -743,7 +832,7 @@ body {
     }
 
     .upImg p {
-        font-size: 43px;
+        font-size: 40px;
 
     }
 
@@ -762,7 +851,7 @@ body {
     }
 
     .leftAbt {
-        margin-top: 50px;
+        margin-top: 10px;
         width: 70%;
     }
 
@@ -795,6 +884,17 @@ body {
     }
 
     /*Rosters*/
+    .tmRoster {
+        padding: 20px 0;
+    }
+
+    .tmRoster h1 {
+        font-size: 25px;
+
+    }
+
+
+
     .roster {
         margin: 50px 0px;
         gap: 25px;
