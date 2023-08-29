@@ -1,4 +1,4 @@
-@import'base/_mixins';
+
 
 html {
     scroll-behavior: smooth;
@@ -43,7 +43,6 @@ body {
 }
 
 .upImg p {
-
     font-size: 4.8rem;
     font-weight: bold;
 }
@@ -244,7 +243,7 @@ span:hover {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: 13px;
     animation: anime 3s cubic-bezier(0.16, 1, 0.3, 1) 1s;
@@ -261,7 +260,7 @@ span:hover {
 
 .roster .card p {
     font-size: 23px;
-    text-align: justify;
+    text-align: center;
     color: #84849d;
 }
 
@@ -584,9 +583,9 @@ footer {
     }
 
     .card {
-        padding: 30px;
+        padding: 20px;
         height: auto;
-        width: 30vw;
+        width: 40vw;
         gap: 15px;
     }
 
@@ -594,10 +593,6 @@ footer {
         gap: 0px;
     }
 
-    .roster .card p {
-        font-size: 16px;
-
-    }
 
     .roster .card span {
         font-size: 18px;
@@ -622,7 +617,7 @@ footer {
 
     .roster .card p {
         font-size: 23px;
-        text-align: justify;
+
         color: #84849d;
     }
 
@@ -747,9 +742,9 @@ footer {
     }
 
     .card {
-        padding: 30px;
+        padding: 20px;
         height: auto;
-        width: 40vw;
+        width: 45vw;
         gap: 15px;
     }
 
@@ -758,7 +753,7 @@ footer {
     }
 
     .roster .card p {
-        font-size: 16px;
+        font-size: 20px;
 
     }
 
@@ -768,7 +763,7 @@ footer {
     }
 
     .links i {
-        font-size: 25px;
+        font-size: 35px;
     }
 
     .inst {
@@ -779,7 +774,7 @@ footer {
 
     #pImg {
 
-        width: 90%;
+        width: 70%;
 
     }
 
@@ -901,9 +896,9 @@ footer {
     }
 
     .card {
-        padding: 30px;
+        padding: 15px;
         height: auto;
-        width: 60vw;
+        width: 75vw;
         gap: 15px;
     }
 
@@ -912,7 +907,7 @@ footer {
     }
 
     .roster .card p {
-        font-size: 16px;
+        font-size: 20px;
 
     }
 
@@ -922,7 +917,7 @@ footer {
     }
 
     .links i {
-        font-size: 25px;
+        font-size: 35px;
     }
 
     .inst {
@@ -933,7 +928,7 @@ footer {
 
     #pImg {
 
-        width: 90%;
+        width: 70%;
 
     }
 
