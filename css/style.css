@@ -333,7 +333,9 @@ span:hover {
     width: min(60rem, 90%);
     margin-inline: auto;
 }
-
+.acheivement .aCard {
+    transition: 0.3s ease-out;
+}
 .acheivement .aCard:hover {
     color: var(--accent-color);
     text-shadow: 0 0 30px var(--accent-color);
